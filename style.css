@@ -1,32 +1,64 @@
 body {
-    background-color: #F2F6F7;
+    background-color: #EDF2FB;
     font-family:URW Gothic;
     color: #525252;
-    font-size:10px
+    font-size:10px;
+    padding: 3%;
 }
-h1 {
+
+div h1 {
     font-size: 5em;
     text-align: center;
-    color: #24406A;
+    color: #40708C;
 }
+
 h2 {
-    color: #24406A;
+    color: #40708C;
     font-size: 3.2em;
+
 }
+
 p {
     font-size: 2.2em;
 }
+
 ul {
     font-size: 2em;
 }
+
 snap {
-    font-weight: boldgit ;
+    font-weight: bold;
+    color: black;
 }
+
 strong {
     color: black;
 }
+
 a {
     color: black;
     font-weight: bold;
     text-decoration: none;
+}
+
+
+
+.profile-pic {
+    border-radius: 50%;
+    float: left;
+    width: 256px;
+    padding: 7px;
+    background-color: #40708C;
+}
+
+.profile-pic-container {
+    height: 270px;
+    position: relative;
+}
+
+.description {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    right: 2%;
 }
