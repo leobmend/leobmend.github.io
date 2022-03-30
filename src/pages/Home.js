@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import profilePic from '../images/profile.png';
 
 function Home() {
   const [hrStyle, setHrStyle] = useState('w-1 h-2');
   const [upContainerStyle, setUpContainerStyle] = useState('opacity-0 translate-y-52');
-  const [downContainerStyle, setDownContainerStyle] = useState('opacity-0 -translate-y-52 ')
+  const [downContainerStyle, setDownContainerStyle] = useState('opacity-0 -translate-y-52 ');
 
-  const MENU_LINKS_STYLE = "ease-in duration-200 mx-20 rounded-xl p-2 hover:bg-slate-100 hover:text-black";
+  const navigate = useNavigate();
+
+  const MENU_LINKS_STYLE = "ease-in duration-200 mx-20 rounded-xl p-2 font-semibold hover:bg-slate-100 hover:text-black";
   
   useEffect(() => {
     setTimeout(() => {
@@ -21,6 +23,15 @@ function Home() {
       setDownContainerStyle('');
     }, 1040);
   }, [])
+
+  const handleClick = (path) => {
+    setHrStyle('w-1 h-2');
+    setUpContainerStyle('opacity-0 translate-y-20');
+    setDownContainerStyle('opacity-0 -translate-y-20')
+    setTimeout(() => {
+      navigate(`/${path}`)
+    }, 750)
+  }
 
   return (
     <main className="flex flex-col justify-center items-center h-full">
@@ -39,19 +50,18 @@ function Home() {
       <hr
         className={`ease-in-out duration-500 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}
       />
-      <nav className={`ease-in-out duration-700 flex items-center text-white font-semibold text-4xl h-full z-10 ${downContainerStyle}`}>
-        <Link to="/projects">
+      <nav className={`ease-in-out duration-700 flex items-center text-white text-4xl h-full z-10 ${downContainerStyle}`}>
+        <button type="button" onClick={ () => handleClick('projects') }>
           <h2 className={ MENU_LINKS_STYLE }>Projects</h2>
-        </Link>
-        <Link to="/about">
+        </button>
+        <button type="button" onClick={ () => handleClick('about') }>
           <h2 className={ MENU_LINKS_STYLE }>About</h2>
-        </Link>
-        <Link to="technologies">
+        </button>
+        <button type="button" onClick={ () => handleClick('technologies') }>
           <h2 className={ MENU_LINKS_STYLE }>Technologies</h2>
-        </Link>
+        </button>
       </nav>
     </main>
-
   );
 }
 
