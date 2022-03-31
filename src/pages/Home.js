@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import profilePic from '../images/profile.png';
+import profilePic from '../midia/profile.png';
 
 function Home() {
   const [hrStyle, setHrStyle] = useState('w-1 h-2');
@@ -18,10 +18,10 @@ function Home() {
     }, 800);
     setTimeout(() => {
       setUpContainerStyle('');
-    }, 1040);
+    }, 800);
     setTimeout(() => {
       setDownContainerStyle('');
-    }, 1040);
+    }, 800);
   }, [])
 
   const handleClick = (path) => {
