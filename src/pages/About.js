@@ -80,7 +80,7 @@ function About() {
           {' '}
           em parceria com a
           {' '}
-          <a className="font-bold" target="_blank" rel="noreferrer" href="https://www.xpinc.com/">XP Inc.</a> 
+          <a className="font-bold" target="_blank" rel="noreferrer" href="https://www.xpinc.com/">XP Inc.</a>
         </p>
       </article>
     </main>
