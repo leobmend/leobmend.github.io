@@ -3,16 +3,22 @@ import profilePic from '../midia/profile.png';
 import linkedinSvg from '../midia/linkedin.svg';
 import gmailSvg from '../midia/gmail.svg';
 import githubSvg from '../midia/github.svg';
+import { useNavigate } from 'react-router-dom';
+import MenuNav from '../components/MenuNav';
 
 
 function About() {
   const [hrStyle, setHrStyle] = useState('w-2 h-1');
   const [leftContainerStyle, setLeftContainerStyle] = useState('w-full opacity-0');
-  const [rightContainerStyle, setRightContainerStyle] = useState('w-full opacity-0')
+  const [rightContainerStyle, setRightContainerStyle] = useState('w-full opacity-0');
+  const [menuContainerStyle, setMenuContainerStyle] = useState('opacity-0');
+  
+  const MENU_LINKS_STYLE = "ease-in duration-200 mx-20 rounded-xl p-1 mt-1 font-semibold hover:bg-slate-100 hover:text-black";
   
   useEffect(() => {
     setTimeout(() => {
       setHrStyle('w-1 h-5/6');
+      setMenuContainerStyle('');
     }, 400);
     setTimeout(() => {
       setLeftContainerStyle('w-1/5 opacity-0');
@@ -23,50 +29,92 @@ function About() {
     setTimeout(() => {
       setRightContainerStyle('');
     }, 1000);
-  }, [])
+  }, []);
+
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    setLeftContainerStyle('w-1/5 opacity-0');
+    setRightContainerStyle('opacity-0');
+    setTimeout(() => {
+      setLeftContainerStyle('w-full opacity-0');
+      setRightContainerStyle('w-full opacity-0');
+      setHrStyle('w-2 h-1');
+      setMenuContainerStyle('opacity-0');
+    }, 750);
+    setTimeout(() => {
+      navigate(`/${path}`);
+    }, 1400);
+  }
 
   return (
-    <main className="flex justify-center items-center h-full">
+    <main className="flex justify-center items-center h-full overflow-hidden">
+      {/* <nav className={`ease-in-out duration-700 flex absolute top-0 items-center text-white text-xl ${menuContainerStyle}`}>
+        <button type="button" onClick={ () => handleClick('') }>
+          <h2 className={ MENU_LINKS_STYLE }>Home</h2>
+        </button>
+        <button type="button" onClick={ () => handleClick('projects') }>
+          <h2 className={ MENU_LINKS_STYLE }>Projects</h2>
+        </button>
+        <button type="button" onClick={ () => handleClick('technologies') }>
+          <h2 className={ MENU_LINKS_STYLE }>Technologies</h2>
+        </button>
+      </nav> */}
+      <MenuNav buttonsStyles={ MENU_LINKS_STYLE } handleClick={ handleClick } menuContainerStyles={ menuContainerStyle } />
       <section
         className={`ease-in-out duration-500 h-full py-20 flex flex-col items-center justify-around ${leftContainerStyle}`}
       >
         <img
-          className="ease-in-out duration-500 mx-20 rounded-full w-44 shadow-sm shadow-gray-50"
+          className="ease-in-out duration-500 rounded-full w-9/12 shadow-sm shadow-gray-50"
           src={profilePic} alt="Leonardo"
         />
-        <section className='flex flex-col items-center w-full'>
-          <div className="flex justify-center w-1/3 aspect-square border-3 my-3 rounded-full border-white">
+        <section className="flex flex-col items-center w-full">
+          <a
+            href="https://www.linkedin.com/in/leobmend/" target="_blank" rel="noreferrer"
+            className="flex justify-center w-3/12 aspect-square border-3 my-3 rounded-full border-white"
+          >
             <img
               className="w-1/2"
               src={ linkedinSvg }
               alt="Linkedin"
             />
-          </div>
-          <div className="flex justify-center w-1/3 aspect-square border-3 my-3 rounded-full border-white">
+          </a>
+          <div
+            className="flex justify-center w-3/12 aspect-square border-3 my-3 rounded-full border-white"
+            onClick={ () => {
+              navigator.clipboard.writeText('leo.bmendonca@gmail.com');
+              window.alert('Meu e-mail foi copiado para sua área de transferência com sucesso! Não deixe de entrar em contato. :)')
+            } }
+          >
             <img
               className="w-2/3"
               src={ gmailSvg }
               alt="G-mail"
             />
           </div>
-          <div className="flex justify-center w-1/3 aspect-square border-3 my-3 rounded-full border-white">
+          <a
+            href="https://github.com/leobmend" target="_blank" rel="noreferrer"
+            className="flex justify-center w-3/12 aspect-square border-3 my-3 rounded-full border-white"
+          >
             <img
               className="w-2/3"
               src={ githubSvg }
               alt="Github"
             />
-          </div>
+          </a>
         </section>
       </section>
       <hr
-        className={`ease-in-out duration-500 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}
+        className={`ease-in-out duration-500 rounded-sm border-none bg-slate-100 ${hrStyle}`}
       />
-      <article className={`ease-in-out duration-700 h-full w-full flex flex-col px-32 text-white items-center justify-center ${rightContainerStyle}`}>
-        <div className="mt-auto self-start">
+      <article
+        className={`ease-in-out duration-700 h-full w-full flex flex-col text-white items-center justify-center ${rightContainerStyle}`}
+      >
+        <div className="mt-auto px-40 self-start">
           <h1 className="text-4xl text-white">Hi! I'm</h1>
           <h1 className="font-bold text-6xl text-white">LEONARDO</h1>
         </div>
-        <div className="my-auto">
+        <div className="my-auto px-40">
           <p className="text-xl">
             I'm a peaceful guy, with an easy laugh. Always trying to see the good side of situations, or just making jokes with them. I love a good movie, book or tv show, and I dedicate myself to my friendships always that I have an opportunity. Play video games are definitely my hooby: there isn't something like a couch, joysticks and some friends.
             {/* Sou alguém tranquilo e de riso fácil. Sempre tento ver o ponto positivo das situações, ou apenas fazer piadas com elas. Adoro um bom filme ou seriado, e cultivo minhas amizades sempre que posso. Video-games é o meu principal hobbie: nada como um sofá e um controle. */}
