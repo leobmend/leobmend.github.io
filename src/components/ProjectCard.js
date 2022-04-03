@@ -3,7 +3,7 @@ import React from 'react';
 function ProjectCard({ videoSrc, thumbnailSrc, title }) {
   const handleHoverIn = ({ target }) => {    
     // Code obtained from the following stackoverflow thread:
-    // rehttps://stackoverflow.com/questions/49930680/how-to-handle-uncaught-in-promise-domexception-play-failed-because-the-use
+    // https://stackoverflow.com/questions/49930680/how-to-handle-uncaught-in-promise-domexception-play-failed-because-the-use
     const promise = target.play();
     if (promise !== undefined) {
       promise.then(() => {

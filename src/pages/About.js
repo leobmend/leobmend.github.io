@@ -49,18 +49,10 @@ function About() {
 
   return (
     <main className="flex justify-center items-center h-full overflow-hidden">
-      {/* <nav className={`ease-in-out duration-700 flex absolute top-0 items-center text-white text-xl ${menuContainerStyle}`}>
-        <button type="button" onClick={ () => handleClick('') }>
-          <h2 className={ MENU_LINKS_STYLE }>Home</h2>
-        </button>
-        <button type="button" onClick={ () => handleClick('projects') }>
-          <h2 className={ MENU_LINKS_STYLE }>Projects</h2>
-        </button>
-        <button type="button" onClick={ () => handleClick('technologies') }>
-          <h2 className={ MENU_LINKS_STYLE }>Technologies</h2>
-        </button>
-      </nav> */}
-      <MenuNav buttonsStyles={ MENU_LINKS_STYLE } handleClick={ handleClick } menuContainerStyles={ menuContainerStyle } />
+      <MenuNav
+        buttonsStyles={ MENU_LINKS_STYLE } handleClick={ handleClick }
+        menuContainerStyles={ menuContainerStyle } actualPage="About"
+      />
       <section
         className={`ease-in-out duration-500 h-full py-20 flex flex-col items-center justify-around ${leftContainerStyle}`}
       >
