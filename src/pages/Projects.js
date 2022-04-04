@@ -34,7 +34,7 @@ function Projects() {
     setTimeout(() => {
       navigate(`/${path}`)
     }, 750)
-  }
+  };
 
   return (
     <main className="flex flex-col justify-center items-center h-full">
