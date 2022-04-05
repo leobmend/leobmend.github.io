@@ -112,12 +112,12 @@ function About() {
             {/* Sou alguém tranquilo e de riso fácil. Sempre tento ver o ponto positivo das situações, ou apenas fazer piadas com elas. Adoro um bom filme ou seriado, e cultivo minhas amizades sempre que posso. Video-games é o meu principal hobbie: nada como um sofá e um controle. */}
           </p>
           <br />
-          <p className="text-xl">
+          <p className="text-2xl">
             Technology enthusiast since my childhood, I ended up choosing for a graduation course not so related. However, certain things in life choose us, instead of us choosing them. And now I'm here persuing the dream of make a career on software development. Therefore, every day I seek to learn more about programming and its ability to change the world.
             {/* Entusiasta de tecnologia desde a infância, acabei por optar por uma graduação não tão ligada à área. Porém, certas coisas na nossa vida nos escolhem, ao invés de as escolhermos. E agora persigo o sonho de trilhar uma carreira em desenvolvimento de software. Portanto, busco cada dia saber um pouco mais sobre programação e a sua capacidade de mudar o mundo. */}
           </p>
           <br />
-          <p className="text-xl">
+          <p className="text-2xl">
             Currently, I participate in the
             {' '}
             <a className="font-bold" target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=QxDZSwtMJZ4">Turma XP</a>

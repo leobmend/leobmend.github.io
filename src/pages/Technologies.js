@@ -8,6 +8,7 @@ import reduxLogo from '../midia/redux.svg';
 import tailwindLogo from '../midia/tailwind.svg';
 import MenuNav from '../components/MenuNav';
 import { useNavigate } from 'react-router-dom';
+import TechDescription from '../components/TechDescription';
 
 function Technologies() {
   const [hrStyle, setHrStyle] = useState('w-1 h-2');
@@ -43,14 +44,11 @@ function Technologies() {
   };
 
   const handleClickTech = (tech) => {
-    // const techs = {
-    //   js: 'js', css: 'css', html: 'html', react: 'react', redux: 'redux', tailwind: 'tailwind',
-    // };
     setTechSelected(tech);
   }
 
   return (
-    <main className="flex flex-col justify-center items-center h-full">
+    <main className="flex flex-col justify-center items-center overflow-hidden h-full">
       <MenuNav
         buttonsStyles={ MENU_LINKS_STYLE } handleClick={ handleClickNav }
         menuContainerStyles={ menuContainerStyle } actualPage="Technologies"
@@ -87,7 +85,7 @@ function Technologies() {
         className={`ease-in-out duration-500 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}
       />
       <div className={`ease-in-out duration-700 h-full w-full flex items-center justify-center ${downContainerStyle}`}>
-        Down
+        <TechDescription tech={ techSelected } />
       </div>
     </main>
   );
