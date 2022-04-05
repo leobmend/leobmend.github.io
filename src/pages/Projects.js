@@ -16,7 +16,7 @@ function Projects() {
 
   useEffect(() => {
     setTimeout(() => {
-      setHrStyle('w-5/6 h-2');
+      setHrStyle('w-11/12 h-2');
       setMenuContainerStyle('');
     }, 400);
     setTimeout(() => {
