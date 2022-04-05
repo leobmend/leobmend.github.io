@@ -102,12 +102,12 @@ function About() {
       <article
         className={`ease-in-out duration-700 h-full w-full flex flex-col text-white items-center justify-center ${rightContainerStyle}`}
       >
-        <div className="mt-auto px-40 self-start">
+        <div className="mt-auto px-40 ml-10 self-start">
           <h1 className="text-4xl text-white">Hi! I'm</h1>
           <h1 className="font-bold text-6xl text-white">LEONARDO</h1>
         </div>
         <div className="my-auto px-40">
-          <p className="text-xl">
+          <p className="text-2xl">
             I'm a peaceful guy, with an easy laugh. Always trying to see the good side of situations, or just making jokes with them. I love a good movie, book or tv show, and I dedicate myself to my friendships always that I have an opportunity. Play video games are definitely my hooby: there isn't something like a couch, joysticks and some friends.
             {/* Sou alguém tranquilo e de riso fácil. Sempre tento ver o ponto positivo das situações, ou apenas fazer piadas com elas. Adoro um bom filme ou seriado, e cultivo minhas amizades sempre que posso. Video-games é o meu principal hobbie: nada como um sofá e um controle. */}
           </p>
