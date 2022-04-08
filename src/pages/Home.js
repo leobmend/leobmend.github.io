@@ -22,7 +22,7 @@ function Home() {
     setTimeout(() => {
       setDownContainerStyle('');
     }, 800);
-  }, [])
+  }, []);
 
   const handleClick = (path) => {
     setHrStyle('w-1 h-2');

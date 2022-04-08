@@ -12,8 +12,8 @@ import TechDescription from '../components/TechDescription';
 
 function Technologies() {
   const [hrStyle, setHrStyle] = useState('w-1 h-2');
-  const [upContainerStyle, setUpContainerStyle] = useState('opacity-0 translate-y-52');
-  const [downContainerStyle, setDownContainerStyle] = useState('opacity-0 -translate-y-52 ');
+  const [upContainerStyle, setUpContainerStyle] = useState('opacity-0 translate-y-16');
+  const [downContainerStyle, setDownContainerStyle] = useState('opacity-0 -translate-y-40');
   const [menuContainerStyle, setMenuContainerStyle] = useState('opacity-0');
   const [techSelected, setTechSelected] = useState('');
 
@@ -25,13 +25,14 @@ function Technologies() {
     setTimeout(() => {
       setHrStyle('w-5/6 h-1');
       setMenuContainerStyle('');
+      setDownContainerStyle('opacity-0');
     }, 400);
     setTimeout(() => {
       setUpContainerStyle('h-1/4');
-    }, 640);
+    }, 1200);
     setTimeout(() => {
       setDownContainerStyle('');
-    }, 640);
+    }, 1600);
   }, []);
 
   const handleClickNav = (path) => {
@@ -84,7 +85,7 @@ function Technologies() {
       <hr
         className={`ease-in-out duration-500 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}
       />
-      <div className={`ease-in-out duration-700 h-full w-full flex items-center justify-center ${downContainerStyle}`}>
+      <div className={`ease-in-out duration-500 h-full w-full flex items-center justify-center ${downContainerStyle}`}>
         <TechDescription tech={ techSelected } />
       </div>
     </main>
