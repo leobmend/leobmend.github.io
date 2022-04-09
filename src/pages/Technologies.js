@@ -36,12 +36,16 @@ function Technologies() {
   }, []);
 
   const handleClickNav = (path) => {
-    setHrStyle('w-1 h-2');
-    setUpContainerStyle('opacity-0 translate-y-20');
-    setDownContainerStyle('opacity-0 -translate-y-20')
+    setUpContainerStyle('opacity-0 h-1/4');
+    setDownContainerStyle('opacity-0')
+    setTimeout(() => {
+      setHrStyle('w-1 h-2');
+      setUpContainerStyle('opacity-0 translate-y-20');
+      setDownContainerStyle('opacity-0 -translate-y-20');
+    }, 400);
     setTimeout(() => {
       navigate(`/${path}`)
-    }, 750)
+    }, 800);
   };
 
   const handleClickTech = (tech) => {
