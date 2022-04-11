@@ -7,6 +7,7 @@ function ProjectCard({ videoSrc, thumbnailSrc, title }) {
     const promise = target.play();
     if (promise !== undefined) {
       promise.then(() => {
+        target.muted();
         // Autoplay started
       }).catch(error => {
         // Autoplay was prevented.

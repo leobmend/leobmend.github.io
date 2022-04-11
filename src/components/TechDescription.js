@@ -26,6 +26,14 @@ const getDescriptions = {
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
+        <div className="flex mb-4">
+          <a href="https://leobmend.github.io/trybewarts-form" target="_blank" rel="noreferrer">
+            <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybewarts Form</p>
+          </a>
+          <a href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
         <div className="flex">
           <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">This Portfolio</p>
           <a href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
@@ -55,6 +63,14 @@ const getDescriptions = {
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
+        <div className="flex mb-4">
+          <a href="https://leobmend.github.io/trybewarts-form" target="_blank" rel="noreferrer">
+            <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybewarts Form</p>
+          </a>
+          <a href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
         <div className="flex">
           <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">This Portfolio</p>
           <a href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
@@ -81,6 +97,14 @@ const getDescriptions = {
             <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybe Tunes</p>
           </a>
           <a href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
+        <div className="flex mb-4">
+          <a href="https://leobmend.github.io/trybewarts-form" target="_blank" rel="noreferrer">
+            <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybewarts Form</p>
+          </a>
+          <a href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
