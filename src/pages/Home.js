@@ -34,23 +34,25 @@ function Home() {
   }
 
   return (
-    <main className="flex flex-col justify-center items-center h-full">
+    <main className="flex flex-col justify-center items-center h-screen w-screen">
       <div
-        className={`ease-in-out duration-700 h-full w-full flex items-center justify-center ${upContainerStyle}`}
+        className={`ease-in-out duration-700 h-screen w-screen flex items-center justify-center ${upContainerStyle}
+          flex`}
       >
-        <div className="mx-20 flex flex-col">
-          <h1 className="text-center font-bold text-7xl text-white">LEONARDO</h1>
-          <h1 className="text-center text-[2.5rem] text-white">BARROS MENDONÇA</h1>
+        <div className="flex flex-col mx-4 md:mx-8 2xl:mx-20">
+          <h1 className="text-center font-bold text-white text-3xl md:text-5xl 2xl:text-7xl">LEONARDO</h1>
+          <h1 className="text-center text-white text-[1.1rem] md:text-[1.7rem] 2xl:text-[2.5rem]">BARROS MENDONÇA</h1>
         </div>
         <img
-          className="ease-in-out duration-700 mx-20 rounded-full w-72"
+          className="ease-in-out duration-700 rounded-full w-1/4 mx-4 md:mx-8 2xl:mx-20 2xl:w-72"
           src={profilePic} alt="Leonardo"
         />
       </div>
       <hr
         className={`ease-in-out duration-500 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}
       />
-      <nav className={`ease-in-out duration-700 flex items-center text-white text-4xl h-full z-10 ${downContainerStyle}`}>
+      <nav className={`ease-in-out duration-700 flex flex-col justify-center items-center text-white h-full z-10 
+        text-xl ${downContainerStyle} 2xl:text-4xl 2xl:flex-row`}>
         <button type="button" onClick={ () => handleClick('projects') }>
           <h2 className={ MENU_LINKS_STYLE }>Projects</h2>
         </button>
