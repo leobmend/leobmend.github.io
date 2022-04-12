@@ -12,9 +12,7 @@ function About() {
   const [leftContainerStyle, setLeftContainerStyle] = useState('w-full opacity-0');
   const [rightContainerStyle, setRightContainerStyle] = useState('w-full opacity-0');
   const [menuContainerStyle, setMenuContainerStyle] = useState('opacity-0');
-  
-  const MENU_LINKS_STYLE = "ease-in duration-200 mx-20 rounded-xl p-1 mt-1 font-semibold hover:bg-slate-100 hover:text-black";
-  
+    
   useEffect(() => {
     setTimeout(() => {
       setHrStyle('w-1 h-5/6');
@@ -50,8 +48,7 @@ function About() {
   return (
     <main className="flex justify-center items-center h-full overflow-hidden">
       <MenuNav
-        buttonsStyles={ MENU_LINKS_STYLE } handleClick={ handleClick }
-        menuContainerStyles={ menuContainerStyle } actualPage="About"
+        handleClick={ handleClick } menuContainerStyles={ menuContainerStyle } actualPage="About"
       />
       <section
         className={`ease-in-out duration-500 h-full py-20 flex flex-col items-center justify-around ${leftContainerStyle}`}

@@ -13,8 +13,6 @@ function Projects() {
   
   const navigate = useNavigate();
 
-  const MENU_LINKS_STYLE = "ease-in duration-200 mx-20 rounded-xl p-1 mt-1 font-semibold hover:bg-slate-100 hover:text-black";
-
   useEffect(() => {
     setTimeout(() => {
       setHrStyle('w-11/12 h-2');
@@ -40,8 +38,7 @@ function Projects() {
   return (
     <main className="flex flex-col justify-center items-center h-full">
       <MenuNav
-        buttonsStyles={ MENU_LINKS_STYLE } handleClick={ handleClick }
-        menuContainerStyles={ menuContainerStyle } actualPage="Projects"
+        handleClick={ handleClick } menuContainerStyles={ menuContainerStyle } actualPage="Projects"
       />
       <div
         className={`ease-in-out duration-700 h-full w-full flex items-center justify-evenly ${upContainerStyle}`}
