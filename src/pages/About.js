@@ -143,7 +143,7 @@ function About() {
             O curso contempla dos fundamentos até os frameworks mais utilizados pelo mercado de desenvolvimento web, além de preparar o profissional para o mercado de trabalho, treinando-o em diversas <span className="italic">soft-skills</span>. */}
           </p>
         </div>
-        <footer className="flex justify-center absolute bottom-0 mb-1 items-center h-10 w-full md:hidden">
+        <footer className="flex justify-center fixed bottom-0 mb-1 items-center h-10 w-full md:hidden">
           <a
             href="https://www.linkedin.com/in/leobmend/" target="_blank" rel="noreferrer"
             className={FOOTER_BUTTONS_STYLES}
