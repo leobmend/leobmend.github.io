@@ -12,7 +12,9 @@ function About() {
   const [leftContainerStyle, setLeftContainerStyle] = useState('w-full opacity-0');
   const [rightContainerStyle, setRightContainerStyle] = useState('w-full opacity-0');
   const [menuContainerStyle, setMenuContainerStyle] = useState('opacity-0');
-    
+
+  const FOOTER_BUTTONS_STYLES = "flex justify-center w-1/12 aspect-square border-2 mx-10 rounded-full border-white"
+
   useEffect(() => {
     setTimeout(() => {
       setHrStyle('w-1 h-5/6');
@@ -63,7 +65,7 @@ function About() {
             className="flex justify-center w-3/12 aspect-square border-3 my-3 rounded-full border-white"
           >
             <img
-              className="w-1/2"
+              className="w-2/3"
               src={ linkedinSvg }
               alt="Linkedin"
             />
@@ -141,6 +143,41 @@ function About() {
             O curso contempla dos fundamentos até os frameworks mais utilizados pelo mercado de desenvolvimento web, além de preparar o profissional para o mercado de trabalho, treinando-o em diversas <span className="italic">soft-skills</span>. */}
           </p>
         </div>
+        <footer className="flex justify-center absolute bottom-0 mb-1 items-center h-10 w-full md:hidden">
+          <a
+            href="https://www.linkedin.com/in/leobmend/" target="_blank" rel="noreferrer"
+            className={FOOTER_BUTTONS_STYLES}
+          >
+            <img
+              className="w-3/4"
+              src={ linkedinSvg }
+              alt="Linkedin"
+            />
+          </a>
+          <div
+            className={FOOTER_BUTTONS_STYLES}
+            onClick={ () => {
+              navigator.clipboard.writeText('leo.bmendonca@gmail.com');
+              window.alert('Meu e-mail foi copiado para sua área de transferência com sucesso! Não deixe de entrar em contato. :)')
+            } }
+          >
+            <img
+              className="w-3/4"
+              src={ gmailSvg }
+              alt="G-mail"
+            />
+          </div>
+          <a
+            href="https://github.com/leobmend" target="_blank" rel="noreferrer"
+            className={FOOTER_BUTTONS_STYLES}
+          >
+            <img
+              className="w-3/4"
+              src={ githubSvg }
+              alt="Github"
+            />
+          </a>
+        </footer>
       </article>
     </main>
   );
