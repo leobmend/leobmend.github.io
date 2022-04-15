@@ -53,14 +53,14 @@ function Projects() {
         handleClick={ handleClickNav } menuContainerStyles={ menuContainerStyle } actualPage="Projects"
       />
       <section
-        className={`ease-in-out duration-700 h-1/2 w-screen px-4 2xl:mb-1 flex items-center snap-x snap-mandatory 2xl:snap-none 2xl:scrollbar2xl 
+        className={`ease-in-out duration-700 h-1/2 w-screen px-4 flex items-center snap-x snap-mandatory 2xl:snap-none 2xl:scrollbar2xl 
           overflow-auto overflow-x-scroll ${upContainerStyle}`}
         onWheel={ handleScroll }
       >
-        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } />
-        <ProjectCard title="Trybe Tunes" videoSrc={ trybeTunesVideo } handleClick={ handleClick } />
-        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } />
-        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } />
+        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
+        <ProjectCard title="Trybe Tunes" videoSrc={ trybeTunesVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
+        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } selecprojectSelectedted={ projectSelected } />
+        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
       </section>
       <hr
         className={`ease-in-out duration-500 h-1 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}
