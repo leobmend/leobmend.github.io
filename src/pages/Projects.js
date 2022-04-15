@@ -66,7 +66,7 @@ function Projects() {
         className={`ease-in-out duration-500 h-1 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}
       />
       <div 
-        className={`ease-in-out duration-700 h-1/2 w-screen px-8 flex justify-center items-center ${downContainerStyle}`}
+        className={`ease-in-out duration-700 h-1/2 w-screen px-4 flex justify-center items-center ${downContainerStyle}`}
       >
         <ProjectDescription project={ projectSelected } />
       </div>
