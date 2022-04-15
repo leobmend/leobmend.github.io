@@ -59,8 +59,6 @@ function Projects() {
       >
         <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
         <ProjectCard title="Trybe Tunes" videoSrc={ trybeTunesVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
-        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } selecprojectSelectedted={ projectSelected } />
-        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
       </section>
       <hr
         className={`ease-in-out duration-500 h-1 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}
