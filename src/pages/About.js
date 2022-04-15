@@ -110,17 +110,17 @@ function About() {
         </div>
         <div className="my-auto text-justify overflow-auto h-1/2 md:h-fit text-md md:text-2xl px-8 md:px-40 scrollbar">
           <p>
-            I'm a peaceful guy, with an easy laugh. Always trying to see the good side of situations, or just making jokes with them. I love a good movie, book or tv show, and I dedicate myself to my friendships always that I have an opportunity. Play video games are definitely my hooby: there isn't something like a couch, joysticks and some friends.
+            I'm a peaceful guy, with an easy laugh. Always trying to see the good side of situations, or just making jokes with them. I love a good movie, book or tv show, and I dedicate myself to my friendships whenever I have an opportunity. Play video games are definitely my hooby: there isn't something like a couch, joysticks and some friends.
             {/* Sou alguém tranquilo e de riso fácil. Sempre tento ver o ponto positivo das situações, ou apenas fazer piadas com elas. Adoro um bom filme ou seriado, e cultivo minhas amizades sempre que posso. Video-games é o meu principal hobbie: nada como um sofá e um controle. */}
           </p>
           <br />
           <p>
-            Technology enthusiast since my childhood, I ended up choosing for a graduation course not so related. However, certain things in life choose us, instead of us choosing them. And now I'm here persuing the dream of make a career on software development. Therefore, every day I seek to learn more about programming and its ability to change the world.
+            Technology enthusiast since my childhood, I ended up choosing for a graduation course not so related. However, certain things in life chooses us, instead of us choosing them. And now I'm here persuing the dream of make a career on software development. Therefore, every day I seek to learn more about programming and it's ability to change the world.
             {/* Entusiasta de tecnologia desde a infância, acabei por optar por uma graduação não tão ligada à área. Porém, certas coisas na nossa vida nos escolhem, ao invés de as escolhermos. E agora persigo o sonho de trilhar uma carreira em desenvolvimento de software. Portanto, busco cada dia saber um pouco mais sobre programação e a sua capacidade de mudar o mundo. */}
           </p>
           <br />
           <p>
-            Currently, I participate in the
+            Currently, I'm pariticipating in the
             {' '}
             <a className="font-bold" target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=QxDZSwtMJZ4">Turma XP</a>
             , a partnership between
