@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import githubSvg from '../midia/github.svg';
 import diagonalArrow from '../midia/diagonal-arrow.svg';
 
@@ -20,7 +20,7 @@ const getDescriptions = {
           <img className="ease-in-out duration-500 hover:-translate-y-2 p-2 w-8" src={ diagonalArrow } alt="Github repository" />
         </a>
         <a href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
-          <img className="ease-in-out duration-500 hover:-translate-y-2 rounded-full" src={ githubSvg } alt="Github repository" />
+          <img className="ease-in-out duration-500 hover:-translate-y-2 rounded-full bg-black" src={ githubSvg } alt="Github repository" />
         </a>
       </div>
       <p className={ pStyle }>
@@ -40,7 +40,7 @@ const getDescriptions = {
           <img className="ease-in-out duration-500 hover:-translate-y-2 p-2 w-8" src={ diagonalArrow } alt="Github repository" />
         </a>
         <a href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
-          <img className="ease-in-out duration-500 hover:-translate-y-2 rounded-full" src={ githubSvg } alt="Github repository" />
+          <img className="ease-in-out duration-500 hover:-translate-y-2 rounded-full bg-black" src={ githubSvg } alt="Github repository" />
         </a>
       </div>
       <p className={ pStyle }>
@@ -53,11 +53,23 @@ const getDescriptions = {
 }
 
 function ProjectDescription({ project }) {
+  const [descriptionHtml, setDescriptionHtml] = useState(getDescriptions[project]);
+  const [articleStyle, setArticleStyle] = useState('');
+
+  useEffect(() => {
+    setArticleStyle('opacity-0');
+    setTimeout(() => {
+      setDescriptionHtml(getDescriptions[project]);
+      setArticleStyle('');
+    }, 600);
+  }, [project]);
+
   return (
     <article
-      className="ease-in-out duration-500 flex flex-col p-4 border-white border-2 rounded-lg text-white justify-around items-center min-h-[60%] w-11/12"
+      className={ `ease-in-out duration-500 flex flex-col p-4 rounded-lg bg-slate-100 
+        justify-around items-center min-h-[60%] w-11/12 ${articleStyle}` }
     >
-      {getDescriptions[project]}
+      {descriptionHtml}
     </article>
   )
 }
