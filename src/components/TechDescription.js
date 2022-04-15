@@ -22,7 +22,7 @@ const getDescriptions = {
           <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
             <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybe Tunes</p>
           </a>
-          <a href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
@@ -30,13 +30,13 @@ const getDescriptions = {
           <a href="https://leobmend.github.io/trybewarts-form" target="_blank" rel="noreferrer">
             <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybewarts Form</p>
           </a>
-          <a href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
         <div className="flex">
           <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">This Portfolio</p>
-          <a href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
@@ -59,7 +59,7 @@ const getDescriptions = {
           <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
             <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybe Tunes</p>
           </a>
-          <a href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
@@ -67,13 +67,13 @@ const getDescriptions = {
           <a href="https://leobmend.github.io/trybewarts-form" target="_blank" rel="noreferrer">
             <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybewarts Form</p>
           </a>
-          <a href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
         <div className="flex">
           <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">This Portfolio</p>
-          <a href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
@@ -96,7 +96,7 @@ const getDescriptions = {
           <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
             <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybe Tunes</p>
           </a>
-          <a href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
@@ -104,13 +104,13 @@ const getDescriptions = {
           <a href="https://leobmend.github.io/trybewarts-form" target="_blank" rel="noreferrer">
             <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybewarts Form</p>
           </a>
-          <a href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
         <div className="flex">
           <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">This Portfolio</p>
-          <a href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
@@ -136,13 +136,13 @@ const getDescriptions = {
           <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
             <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">Trybe Tunes</p>
           </a>
-          <a href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
         <div className="flex">
           <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">This Portfolio</p>
-          <a href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>
@@ -159,23 +159,6 @@ const getDescriptions = {
         </a>
       </div>
       <p className="text-2xl">Redux is a predictable state container for JavaScript apps. It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.</p>
-      {/* <h2 className="self-start ml-10 font-bold text-3xl">Projects</h2>
-      <div className="text-2xl">
-        <div className="flex mb-4">
-          <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
-            <p className="mr-5">Trybe Tunes</p>
-          </a>
-          <a href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
-            <img className="bg-black rounded-full" src={ githubSvg } alt="Github repository" />
-          </a>
-        </div>
-        <div className="flex">
-          <p className="mr-5">This Portfolio</p>
-          <a href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
-            <img className="bg-black rounded-full" src={ githubSvg } alt="Github repository" />
-          </a>
-        </div>
-      </div> */}
     </>
   ),
   "tailwind": (
@@ -192,7 +175,7 @@ const getDescriptions = {
       <div className="text-2xl">
         <div className="flex">
           <p className="ease-in-out duration-500 hover:bg-black hover:rounded-full hover:text-white py-1 px-2 mr-3">This Portfolio</p>
-          <a href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
+          <a className="self-center" href="https://github.com/leobmend/leobmend.github.io" target="_blank" rel="noreferrer">
             <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
           </a>
         </div>

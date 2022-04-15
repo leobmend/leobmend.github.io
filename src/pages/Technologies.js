@@ -19,8 +19,6 @@ function Technologies() {
 
   const navigate = useNavigate();
 
-  const MENU_LINKS_STYLE = "ease-in duration-200 mx-20 rounded-xl p-1 mt-1 font-semibold hover:bg-slate-100 hover:text-black";
-
   useEffect(() => {
     setTimeout(() => {
       setHrStyle('w-5/6 h-1');
@@ -55,8 +53,7 @@ function Technologies() {
   return (
     <main className="flex flex-col justify-center items-center overflow-hidden h-full">
       <MenuNav
-        buttonsStyles={ MENU_LINKS_STYLE } handleClick={ handleClickNav }
-        menuContainerStyles={ menuContainerStyle } actualPage="Technologies"
+        handleClick={ handleClickNav } menuContainerStyles={ menuContainerStyle } actualPage="Technologies"
       />
       <div
         className={`ease-in-out duration-700 h-full w-full flex items-end justify-center ${upContainerStyle}`}
