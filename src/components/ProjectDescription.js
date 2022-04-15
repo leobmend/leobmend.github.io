@@ -34,12 +34,12 @@ const getDescriptions = {
     <>
       <div className={ h1DivStyle }>
         <h1 className="text-center">
-          Trybewarts Form
+          Trybe Tunes
         </h1>
-        <a className="mx-4 md:mx-6" href="https://leobmend.github.io/trybewarts-form" target="_blank" rel="noreferrer">
+        <a className="mx-4 md:mx-6" href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
           <img className="ease-in-out duration-500 hover:-translate-y-2 p-2 w-8" src={ diagonalArrow } alt="Github repository" />
         </a>
-        <a href="https://github.com/leobmend/trybewarts-form" target="_blank" rel="noreferrer">
+        <a href="https://github.com/leobmend/trybe-tunes" target="_blank" rel="noreferrer">
           <img className="ease-in-out duration-500 hover:-translate-y-2 rounded-full" src={ githubSvg } alt="Github repository" />
         </a>
       </div>
