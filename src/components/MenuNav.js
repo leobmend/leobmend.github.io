@@ -2,7 +2,7 @@ import React from 'react';
 
 function MenuNav({ menuContainerStyles, handleClick, actualPage }) {
   const listOfPages = ['About', 'Projects', 'Technologies'].filter((page) => page !== actualPage);
-  const BUTTON_STYLE = "ease-in duration-200 rounded-xl p-1 mt-1 font-semibold hover:bg-slate-100 hover:text-black";
+  const BUTTON_STYLE = "ease-in duration-200 rounded-xl p-1 my-1 font-semibold hover:bg-slate-100 hover:text-black";
 
   return (
     <nav className={`ease-in-out duration-700 flex flex-col w-full absolute top-0 items-center text-white text-lg md:text-xl ${menuContainerStyles}`}>
