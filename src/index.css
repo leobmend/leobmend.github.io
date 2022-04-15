@@ -38,7 +38,7 @@ body {
   }
 
   .scrollbar2xl::-webkit-scrollbar-track {
-    background-color: #456072;
+    background-color: none;
   }
 
   .scrollbar2xl::-webkit-scrollbar-thumb {
