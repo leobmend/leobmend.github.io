@@ -67,7 +67,7 @@ function ProjectDescription({ project }) {
   return (
     <article
       className={ `ease-in-out duration-500 flex flex-col p-4 rounded-lg bg-slate-100 
-        justify-around items-center min-h-[60%] w-11/12 ${articleStyle}` }
+        justify-around items-center min-h-[80%] w-11/12 ${articleStyle}` }
     >
       {descriptionHtml}
     </article>
