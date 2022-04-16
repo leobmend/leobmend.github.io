@@ -27,10 +27,8 @@ function Technologies() {
     }, 400);
     setTimeout(() => {
       setUpContainerStyle('h-1/4');
+      setDownContainerStyle('h-3/4');
     }, 1200);
-    setTimeout(() => {
-      setDownContainerStyle('');
-    }, 1600);
   }, []);
 
   const handleClickNav = (path) => {
@@ -56,32 +54,34 @@ function Technologies() {
         handleClick={ handleClickNav } menuContainerStyles={ menuContainerStyle } actualPage="Technologies"
       />
       <div
-        className={`ease-in-out duration-700 h-full w-full flex items-end justify-center ${upContainerStyle}`}
+        className={ `ease-in-out duration-700 h-full w-full flex items-center justify-center ${upContainerStyle}`}
       >
-        <TechLogo 
-          logo={ jsLogo } selected={ techSelected === 'js' }
-          handleClick={ () => handleClickTech('js') } styles='w-5/6'
-        />
-        <TechLogo
-          logo={ cssLogo } selected={ techSelected === 'css' }
-          handleClick={ () => handleClickTech('css') }
-        />
-        <TechLogo 
-          logo={ htmlLogo } selected={ techSelected === 'html' }
-          handleClick={ () => handleClickTech('html') }
-        />
-        <TechLogo
-          logo={ reactLogo } selected={ techSelected === 'react' }
-          handleClick={ () => handleClickTech('react') }
-        />
-        <TechLogo
-          logo={ reduxLogo } selected={ techSelected === 'redux' }
-          handleClick={ () => handleClickTech('redux') }
-        />
-        <TechLogo
-          logo={ tailwindLogo } selected={ techSelected === 'tailwind' }
-          handleClick={ () => handleClickTech('tailwind') }
-        />
+        <div className="flex items-center overflow-x-scroll h-5/6 snap-x snap-mandatory 2xl:scrollbar2xl">
+          <TechLogo 
+            logo={ jsLogo } selected={ techSelected === 'js' }
+            handleClick={ () => handleClickTech('js') } styles='w-5/6'
+          />
+          <TechLogo
+            logo={ cssLogo } selected={ techSelected === 'css' }
+            handleClick={ () => handleClickTech('css') }
+          />
+          <TechLogo 
+            logo={ htmlLogo } selected={ techSelected === 'html' }
+            handleClick={ () => handleClickTech('html') }
+          />
+          <TechLogo
+            logo={ reactLogo } selected={ techSelected === 'react' }
+            handleClick={ () => handleClickTech('react') }
+          />
+          <TechLogo
+            logo={ reduxLogo } selected={ techSelected === 'redux' }
+            handleClick={ () => handleClickTech('redux') }
+          />
+          <TechLogo
+            logo={ tailwindLogo } selected={ techSelected === 'tailwind' }
+            handleClick={ () => handleClickTech('tailwind') }
+          />
+        </div>
       </div>
       <hr
         className={`ease-in-out duration-500 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}

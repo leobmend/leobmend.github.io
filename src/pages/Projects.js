@@ -53,8 +53,8 @@ function Projects() {
         handleClick={ handleClickNav } menuContainerStyles={ menuContainerStyle } actualPage="Projects"
       />
       <section
-        className={`ease-in-out duration-700 h-1/2 w-screen px-4 flex items-center snap-x snap-mandatory 2xl:snap-none 2xl:scrollbar2xl 
-          overflow-auto overflow-x-scroll ${upContainerStyle}`}
+        className={ "ease-in-out duration-700 h-1/2 w-screen px-4 flex items-center snap-x snap-mandatory 2xl:snap-none 2xl:scrollbar2xl" +
+          ` overflow-auto overflow-x-scroll ${upContainerStyle}`}
         onWheel={ handleScroll }
       >
         <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
