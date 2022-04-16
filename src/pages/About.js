@@ -108,7 +108,7 @@ function About() {
             <h1 className="font-bold text-white text-2xl md:text-6xl">LEONARDO</h1>
           </div>
         </div>
-        <div className="my-auto text-justify overflow-auto h-1/2 md:h-fit text-md md:text-2xl px-8 md:px-40 scrollbar">
+        <div className="my-auto text-justify overflow-auto h-1/2 text-md md:text-2xl px-8 md:px-40 scrollbar -translate-y-5 sm:-translate-y-0">
           <p>
             I'm a peaceful guy, with an easy laugh. Always trying to see the good side of situations, or just making jokes with them. I love a good movie, book or tv show, and I dedicate myself to my friendships whenever I have an opportunity. Play video games are definitely my hooby: there isn't something like a couch, joysticks and some friends.
             {/* Sou alguém tranquilo e de riso fácil. Sempre tento ver o ponto positivo das situações, ou apenas fazer piadas com elas. Adoro um bom filme ou seriado, e cultivo minhas amizades sempre que posso. Video-games é o meu principal hobbie: nada como um sofá e um controle. */}
