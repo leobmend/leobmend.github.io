@@ -6,6 +6,7 @@ import htmlLogo from '../midia/html.svg';
 import reactLogo from '../midia/react.svg';
 import reduxLogo from '../midia/redux.svg';
 import tailwindLogo from '../midia/tailwind.svg';
+import jestLogo from '../midia/jest.svg';
 import MenuNav from '../components/MenuNav';
 import { useNavigate } from 'react-router-dom';
 import TechDescription from '../components/TechDescription';
@@ -76,6 +77,10 @@ function Technologies() {
           <TechLogo
             logo={ reduxLogo } selected={ techSelected === 'redux' }
             handleClick={ () => handleClickTech('redux') }
+          />
+          <TechLogo
+            logo={ jestLogo } selected={ techSelected === 'jest' }
+            handleClick={ () => handleClickTech('jest') } styles='w-5/6'
           />
           <TechLogo
             logo={ tailwindLogo } selected={ techSelected === 'tailwind' }
