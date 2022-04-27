@@ -5,6 +5,7 @@ import ProjectCard from '../components/ProjectCard';
 import ProjectDescription from '../components/ProjectDescription';
 import trybeTunesVideo from '../midia/Trybe Tunes.mp4';
 import trybewartsFormVideo  from '../midia/Trybewarts Form.mp4';
+import tiviaGameVideo from '../midia/Trivia Game.mp4';
 
 function Projects() {
   const [hrStyle, setHrStyle] = useState('w-1');
@@ -57,8 +58,9 @@ function Projects() {
           ` overflow-auto overflow-x-scroll ${upContainerStyle}`}
         onWheel={ handleScroll }
       >
-        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
+        <ProjectCard title="Trivia Game" videoSrc={ tiviaGameVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
         <ProjectCard title="Trybe Tunes" videoSrc={ trybeTunesVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
+        <ProjectCard title="Trybewarts Form" videoSrc={ trybewartsFormVideo } handleClick={ handleClick } projectSelected={ projectSelected } />
       </section>
       <hr
         className={`ease-in-out duration-500 h-1 rounded-sm border-none bg-slate-100 z-10 ${hrStyle}`}

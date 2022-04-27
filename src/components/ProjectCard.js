@@ -27,7 +27,7 @@ function ProjectCard({ videoSrc, thumbnailSrc, title, handleClick, projectSelect
   return (
     <div
       className="flex flex-col xl:flex-row shrink-0 snap-center items-center justify-center w-3/4 md:w-4/6 lg:w-2/6 xl:w-1/2 2xl:w-[40%] h-[60%] md:h-4/6 
-      mx-10 2xl:mx-10 rounded-lg translate-y-6"
+      mx-10 2xl:mx-1 rounded-lg translate-y-6"
       onClick={ () => handleClick(title) }
     >
       <video className="rounded-lg bg-black w-full xl:w-auto xl:h-full"

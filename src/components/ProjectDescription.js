@@ -50,6 +50,26 @@ const getDescriptions = {
       <p className={ pStyle }>React, Javascript, CSS, HTML</p>
     </>
   ),
+  "Trivia Game": (
+    <>
+      <div className={ h1DivStyle }>
+        <h1 className="text-center">
+          Trivia Game
+        </h1>
+        <a className="mx-4 md:mx-6" href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+          <img className="ease-in-out duration-500 hover:-translate-y-2 p-2 w-8" src={ diagonalArrow } alt="Github repository" />
+        </a>
+        <a href="https://github.com/leobmend/trivia-game" target="_blank" rel="noreferrer">
+          <img className="ease-in-out duration-500 hover:-translate-y-2 rounded-full bg-black" src={ githubSvg } alt="Github repository" />
+        </a>
+      </div>
+      <p className={ pStyle }>
+        Play one of the most traditional games and test your knowledge. It's Trivia time!
+      </p>
+      <h2 className={ h2Style }>Techs</h2>
+      <p className={ pStyle }>React, Redux, Jest, Javascript, CSS, HTML</p>
+    </>
+  ),
 }
 
 function ProjectDescription({ project }) {

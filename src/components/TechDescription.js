@@ -26,6 +26,14 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
+          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a className="self-center" href="https://github.com/leobmend/trivia-game" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
+        <div className="flex">
           <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trybe Tunes</p>
           </a>
@@ -65,6 +73,14 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
+          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a className="self-center" href="https://github.com/leobmend/trivia-game" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
+        <div className="flex">
           <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trybe Tunes</p>
           </a>
@@ -103,6 +119,14 @@ const getDescriptions = {
       </p>
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
+        <div className="flex">
+          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a className="self-center" href="https://github.com/leobmend/trivia-game" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
         <div className="flex">
           <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trybe Tunes</p>
@@ -150,6 +174,14 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
+          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a className="self-center" href="https://github.com/leobmend/trivia-game" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
+        <div className="flex">
           <a href="https://leobmend.github.io/trybe-tunes" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trybe Tunes</p>
           </a>
@@ -178,6 +210,51 @@ const getDescriptions = {
       <p className={ pStyle }>
         Redux is a predictable state container for JavaScript apps. It helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.
       </p>
+      <h2 className={ h2Style }>Projects</h2>
+      <div className="my-auto">
+        <div className="flex">
+          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a className="self-center" href="https://github.com/leobmend/trivia-game" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
+      </div>
+    </>
+  ),
+  "jest": (
+    <>
+      <div className={ h1DivStyle }>
+        <h1 className="mr-5">Jest</h1>
+        <a className="ease-in-out duration-500 hover:translate-x-2 self-center"
+          href="https://jestjs.io/" target="_blank" rel="noreferrer">
+          <img className="w-6" src={ docsSvg } alt="Documentation" />
+        </a>
+      </div>
+      <p className={ pStyle }>
+      Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly.
+      </p>
+      <h2 className={ h2Style }>Tools</h2>
+      <p className={ pStyle }>
+        <a 
+          className="font-bold" target="_blank" rel="noreferrer"
+          href="https://testing-library.com/docs/react-testing-library/intro/"
+        >
+          RTL -
+        </a> React Testing Library is a very light-weight solution for testing React components. It provides light utility functions on top of react-dom and react-dom/test-utils, in a way that encourages better testing practices.
+      </p>
+      <h2 className={ h2Style }>Projects</h2>
+      <div className="my-auto">
+        <div className="flex">
+          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a className="self-center" href="https://github.com/leobmend/trivia-game" target="_blank" rel="noreferrer">
+            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
+          </a>
+        </div>
+      </div>
     </>
   ),
   "tailwind": (
