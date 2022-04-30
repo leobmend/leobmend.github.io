@@ -235,17 +235,6 @@ const getDescriptions = {
       <p className={ pStyle }>
         Docker is a software framework for building, running, and managing containers on servers and the cloud. The so-called 'containers' are virtualizations at OS-level that provide a isoleted and replicable enviroment to developers and teams.
       </p>
-      <h2 className={ h2Style }>Projects</h2>
-      <div className="my-auto">
-        <div className="flex">
-          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
-            <p className={ pProjectStyle }>Trivia Game</p>
-          </a>
-          <a className="self-center" href="https://github.com/leobmend/trivia-game" target="_blank" rel="noreferrer">
-            <img className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full" src={ githubSvg } alt="Github repository" />
-          </a>
-        </div>
-      </div>
     </>
   ),
   "jest": (
