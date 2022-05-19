@@ -11,6 +11,7 @@ import reduxLogo from '../midia/redux.svg';
 import tailwindLogo from '../midia/tailwind.svg';
 import jestLogo from '../midia/jest.svg';
 import dockerLogo from '../midia/docker.svg';
+import nodeLogo from '../midia/node.svg';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -74,12 +75,8 @@ function Technologies() {
             handleClick={ () => handleClickTech('html') }
           />
           <TechLogo
-            logo={ reactLogo } selected={ techSelected === 'react' }
-            handleClick={ () => handleClickTech('react') }
-          />
-          <TechLogo
-            logo={ reduxLogo } selected={ techSelected === 'redux' }
-            handleClick={ () => handleClickTech('redux') }
+            logo={ nodeLogo } selected={ techSelected === 'node' }
+            handleClick={ () => handleClickTech('node') } styles='w-5/6'
           />
           <TechLogo
             logo={ jestLogo } selected={ techSelected === 'jest' }
@@ -88,6 +85,14 @@ function Technologies() {
           <TechLogo 
             logo={ dockerLogo } selected={ techSelected === 'docker' }
             handleClick={ () => handleClickTech('docker') }
+          />
+          <TechLogo
+            logo={ reactLogo } selected={ techSelected === 'react' }
+            handleClick={ () => handleClickTech('react') }
+          />
+          <TechLogo
+            logo={ reduxLogo } selected={ techSelected === 'redux' }
+            handleClick={ () => handleClickTech('redux') }
           />
           <TechLogo
             logo={ tailwindLogo } selected={ techSelected === 'tailwind' }

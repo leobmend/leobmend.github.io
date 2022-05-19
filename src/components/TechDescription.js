@@ -271,6 +271,29 @@ const getDescriptions = {
       </div>
     </>
   ),
+  "node": (
+    <>
+      <div className={ h1DivStyle }>
+        <h1 className="mr-5">Node.js</h1>
+        <a className="ease-in-out duration-500 hover:translate-x-2 self-center"
+          href="https://nodejs.dev/" target="_blank" rel="noreferrer">
+          <img className="w-6" src={ docsSvg } alt="Documentation" />
+        </a>
+      </div>
+      <p className={ pStyle }>
+      Node.js is a free, open-sourced, cross-platform JavaScript run-time environment that lets developers write command line tools and server-side scripts outside of a browser.
+      </p>
+      <h2 className={ h2Style }>Tools</h2>
+      <p className={ pStyle }>
+        <a 
+          className="font-bold" target="_blank" rel="noreferrer"
+          href="https://expressjs.com/pt-br/"
+        >
+          Express -
+        </a> Express is a framework for Node.js that provides minimal resources for building HTTP web servers and APIs.
+      </p>
+    </>
+  ),
   "tailwind": (
     <>
       <div className={ h1DivStyle }>
