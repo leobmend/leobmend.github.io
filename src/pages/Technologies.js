@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import TechLogo from '../components/TechLogo';
+import MenuNav from '../components/MenuNav';
+import TechDescription from '../components/TechDescription';
+
 import jsLogo from '../midia/js.svg';
 import cssLogo from '../midia/css.svg';
 import htmlLogo from '../midia/html.svg';
@@ -7,9 +10,10 @@ import reactLogo from '../midia/react.svg';
 import reduxLogo from '../midia/redux.svg';
 import tailwindLogo from '../midia/tailwind.svg';
 import jestLogo from '../midia/jest.svg';
-import MenuNav from '../components/MenuNav';
+import dockerLogo from '../midia/docker.svg';
+import nodeLogo from '../midia/node.svg';
+
 import { useNavigate } from 'react-router-dom';
-import TechDescription from '../components/TechDescription';
 
 function Technologies() {
   const [hrStyle, setHrStyle] = useState('w-1 h-2');
@@ -71,16 +75,24 @@ function Technologies() {
             handleClick={ () => handleClickTech('html') }
           />
           <TechLogo
+            logo={ nodeLogo } selected={ techSelected === 'node' }
+            handleClick={ () => handleClickTech('node') } styles='w-5/6'
+          />
+          <TechLogo
+            logo={ jestLogo } selected={ techSelected === 'jest' }
+            handleClick={ () => handleClickTech('jest') } styles='w-5/6'
+          />
+          <TechLogo 
+            logo={ dockerLogo } selected={ techSelected === 'docker' }
+            handleClick={ () => handleClickTech('docker') }
+          />
+          <TechLogo
             logo={ reactLogo } selected={ techSelected === 'react' }
             handleClick={ () => handleClickTech('react') }
           />
           <TechLogo
             logo={ reduxLogo } selected={ techSelected === 'redux' }
             handleClick={ () => handleClickTech('redux') }
-          />
-          <TechLogo
-            logo={ jestLogo } selected={ techSelected === 'jest' }
-            handleClick={ () => handleClickTech('jest') } styles='w-5/6'
           />
           <TechLogo
             logo={ tailwindLogo } selected={ techSelected === 'tailwind' }
