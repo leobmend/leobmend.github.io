@@ -8,8 +8,8 @@ const h1DivStyle = 'my-2 sm:my-auto flex self-start ml-10 font-bold text-3xl md:
   + '2xl:text-5xl';
 const h2Style = 'my-2 sm:my-auto self-start ml-10 font-bold text-xl md:text-2xl 2xl:text-3xl';
 const pStyle = 'my-1 sm:my-auto self-start text-lg sm:text-2xl text-justify';
-const pProjectStyle = `${pStyle} ease-in-out duration-500 hover:bg-black hover:rounded-full '
-  + 'hover:text-white py-1 px-2 mr-3`;
+const pProjectStyle = `${pStyle} ease-in-out duration-500 hover:bg-black hover:rounded-full `
+  + 'hover:text-white py-1 px-2 mr-3';
 
 const getDescriptions = {
   '': (
@@ -38,7 +38,7 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
-          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trivia Game</p>
           </a>
           <a
@@ -126,7 +126,7 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
-          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trivia Game</p>
           </a>
           <a
@@ -215,7 +215,7 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
-          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trivia Game</p>
           </a>
           <a
@@ -316,7 +316,7 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
-          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trivia Game</p>
           </a>
           <a
@@ -401,7 +401,7 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
-          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trivia Game</p>
           </a>
           <a
@@ -438,6 +438,41 @@ const getDescriptions = {
         and the cloud. The so-called &quot;containers&quot; are virtualizations at OS-level that
         provide a isolated and replicable enviroment to developers and teams.
       </p>
+      <h2 className={ h2Style }>Tools</h2>
+      <p className={ pStyle }>
+        <a
+          className="font-bold"
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.docker.com/compose/"
+        >
+          Docker-Compose -
+        </a>
+        {' '}
+        Compose is a tool for defining and running multi-container Docker applications. With
+        Compose, you use a YAML file to configure your application&apos;s services. Then, with
+        a single command, you create and start all the services from your configuration.
+      </p>
+      <h2 className={ h2Style }>Projects</h2>
+      <div className="my-auto">
+        <div className="flex">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a
+            className="self-center"
+            href="https://github.com/leobmend/trivia-game"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full"
+              src={ githubSvg }
+              alt="Github repository"
+            />
+          </a>
+        </div>
+      </div>
     </>
   ),
   jest: (
@@ -476,7 +511,7 @@ const getDescriptions = {
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
         <div className="flex">
-          <a href="https://leobmend.github.io/trivia-game" target="_blank" rel="noreferrer">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
             <p className={ pProjectStyle }>Trivia Game</p>
           </a>
           <a
@@ -493,6 +528,41 @@ const getDescriptions = {
           </a>
         </div>
       </div>
+    </>
+  ),
+  mocha: (
+    <>
+      <div className={ h1DivStyle }>
+        <h1 className="mr-5">Mocha</h1>
+        <a
+          className="ease-in-out duration-500 hover:translate-x-2 self-center"
+          href="https://mochajs.org/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="w-6" src={ docsSvg } alt="Documentation" />
+        </a>
+      </div>
+      <p className={ pStyle }>
+        Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser.
+        Used in BDD (Behavior Driven Development) or TDD (Test Driver Development), it makes
+        asynchronous testing simple and fun.
+      </p>
+      <h2 className={ h2Style }>Related Tools</h2>
+      <p className={ pStyle }>
+        <a
+          className="font-bold"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.chaijs.com/"
+        >
+          Chai -
+        </a>
+        {' '}
+        Chai has several interfaces that allow the developer to choose the most comfortable. The
+        chain-capable BDD styles provide an expressive language and readable style, while the TDD
+        assert style provides a more classical feel.
+      </p>
     </>
   ),
   node: (
@@ -526,6 +596,26 @@ const getDescriptions = {
         Express is a framework for Node.js that provides minimal resources for building HTTP web
         servers and APIs.
       </p>
+      <h2 className={ h2Style }>Projects</h2>
+      <div className="my-auto">
+        <div className="flex">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a
+            className="self-center"
+            href="https://github.com/leobmend/trivia-game"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full"
+              src={ githubSvg }
+              alt="Github repository"
+            />
+          </a>
+        </div>
+      </div>
     </>
   ),
   tailwind: (

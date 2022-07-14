@@ -89,7 +89,7 @@ const getDescriptions = {
         </h1>
         <a
           className="mx-4 md:mx-6"
-          href="https://leobmend.github.io/trivia-game"
+          href="https://game-trivia.herokuapp.com"
           target="_blank"
           rel="noreferrer"
         >
@@ -108,10 +108,14 @@ const getDescriptions = {
         </a>
       </div>
       <p className={ pStyle }>
-        Play one of the most traditional games and test your knowledge. It@aposs Trivia time!
+        Play one of the most traditional games and test your knowledge. You can personalize
+        your profile and compete against your friends around the world! It&apos;s Trivia time!
       </p>
       <h2 className={ h2Style }>Techs</h2>
-      <p className={ pStyle }>React, Redux, Jest, Javascript, CSS, HTML</p>
+      <p className={ pStyle }>React - Redux - Node.js - Jest</p>
+      <p className={ pStyle }>Docker - Heroku</p>
+      <p className={ pStyle }>Javascript - CSS - HTML</p>
+
     </>
   ),
 };

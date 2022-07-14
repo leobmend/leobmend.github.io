@@ -13,6 +13,7 @@ import tailwindLogo from '../midia/tailwind.svg';
 import jestLogo from '../midia/jest.svg';
 import dockerLogo from '../midia/docker.svg';
 import nodeLogo from '../midia/node.svg';
+import mochaLogo from '../midia/mocha.svg';
 
 function Technologies() {
   const [hrStyle, setHrStyle] = useState('w-1 h-2');
@@ -96,6 +97,11 @@ function Technologies() {
             styles="w-5/6"
           />
           <TechLogo
+            logo={ mochaLogo }
+            selected={ techSelected === 'mocha' }
+            handleClick={ () => handleClickTech('mocha') }
+          />
+          <TechLogo
             logo={ dockerLogo }
             selected={ techSelected === 'docker' }
             handleClick={ () => handleClickTech('docker') }
@@ -114,6 +120,7 @@ function Technologies() {
             logo={ tailwindLogo }
             selected={ techSelected === 'tailwind' }
             handleClick={ () => handleClickTech('tailwind') }
+            styles="w-5/6"
           />
         </div>
       </div>
