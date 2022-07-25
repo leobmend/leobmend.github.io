@@ -114,7 +114,7 @@ const getDescriptions = {
         your profile and compete against your friends around the world! It&apos;s Trivia time!
       </p>
       <h2 className={ h2Style }>Techs</h2>
-      <p className={ pStyle }>React - Redux - Node.js - Jest</p>
+      <p className={ pStyle }>React - Redux - Node.js - Sequelize - Jest</p>
       <p className={ pStyle }>Docker - Heroku</p>
       <p className={ pStyle }>Javascript - CSS - HTML</p>
 
