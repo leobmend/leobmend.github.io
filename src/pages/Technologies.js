@@ -14,6 +14,7 @@ import jestLogo from '../midia/jest.svg';
 import dockerLogo from '../midia/docker.svg';
 import nodeLogo from '../midia/node.svg';
 import mochaLogo from '../midia/mocha.svg';
+import sequelizeLogo from '../midia/sequelize.svg';
 
 function Technologies() {
   const [hrStyle, setHrStyle] = useState('w-1 h-2');
@@ -100,6 +101,11 @@ function Technologies() {
             logo={ mochaLogo }
             selected={ techSelected === 'mocha' }
             handleClick={ () => handleClickTech('mocha') }
+          />
+          <TechLogo
+            logo={ sequelizeLogo }
+            selected={ techSelected === 'sequelize' }
+            handleClick={ () => handleClickTech('sequelize') }
           />
           <TechLogo
             logo={ dockerLogo }
