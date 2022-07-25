@@ -387,16 +387,10 @@ const getDescriptions = {
       </p>
       <h2 className={ h2Style }>Tools</h2>
       <p className={ pStyle }>
-        <span className="font-bold">Context API -</span>
+        <span className="font-bold">Redux Toolkit -</span>
         {' '}
-        Context is a global state manager, providing a way to pass data through the component tree
-        without having to pass props down manually at every level.
-      </p>
-      <p className={ pStyle }>
-        <span className="font-bold">Hooks -</span>
-        {' '}
-        Hooks let you use state and other React features without writing a class. Power to
-        functional components!
+        The Redux Toolkit package is intended to be the standard way to write Redux logic. It was
+        originally created to help address the common concern about Redux configuration complexity.
       </p>
       <h2 className={ h2Style }>Projects</h2>
       <div className="my-auto">
@@ -618,6 +612,46 @@ const getDescriptions = {
       </div>
     </>
   ),
+  sequelize: (
+    <>
+      <div className={ h1DivStyle }>
+        <h1 className="mr-5">Sequelize</h1>
+        <a
+          className="ease-in-out duration-500 hover:translate-x-2 self-center"
+          href="https://sequelize.org/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img className="w-6" src={ docsSvg } alt="Documentation" />
+        </a>
+      </div>
+      <p className={ pStyle }>
+        Sequelize is a modern TypeScript and Node.js ORM for Postgres, MySQL, MariaDB, SQLite and
+        SQL Server. Featuring solid transaction support, relations, eager and lazy loading, read
+        replication and more.
+      </p>
+      <h2 className={ h2Style }>Projects</h2>
+      <div className="my-auto">
+        <div className="flex">
+          <a href="https://game-trivia.herokuapp.com" target="_blank" rel="noreferrer">
+            <p className={ pProjectStyle }>Trivia Game</p>
+          </a>
+          <a
+            className="self-center"
+            href="https://github.com/leobmend/trivia-game"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="ease-in-out duration-500 hover:translate-x-2 bg-black rounded-full"
+              src={ githubSvg }
+              alt="Github repository"
+            />
+          </a>
+        </div>
+      </div>
+    </>
+  ),
   tailwind: (
     <>
       <div className={ h1DivStyle }>
@@ -684,7 +718,7 @@ function TechDescription({ tech }) {
 
   return (
     <article className={ `ease-in-out duration-500 flex flex-col p-4 lg:p-10 items-center
-      w-11/12 h-5/6 bg-slate-100 rounded-xl overflow-auto ${articleStyle}` }
+      w-11/12 h-5/6 bg-slate-100 rounded-xl overflow-auto scrollbar ${articleStyle}` }
     >
       {descriptionHtml}
     </article>
