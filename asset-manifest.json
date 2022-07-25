@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ae0d7ec0.css",
-    "main.js": "/static/js/main.54aa7814.js",
+    "main.css": "/static/css/main.e9b0fffd.css",
+    "main.js": "/static/js/main.2d3b53b3.js",
     "static/media/Trybe Tunes.mp4": "/static/media/Trybe Tunes.a525399610d5917dd9a1.mp4",
     "static/media/Trivia Game.mp4": "/static/media/Trivia Game.75ad7062e859f78094ce.mp4",
     "static/media/Trybewarts Form.mp4": "/static/media/Trybewarts Form.7cb03c80c074f9f42a69.mp4",
     "static/media/profile.png": "/static/media/profile.b6d7037c1341e5fa4f40.png",
     "static/media/react.svg": "/static/media/react.fdd3331d261ad6d5e1c92448737aa2aa.svg",
+    "static/media/mocha.svg": "/static/media/mocha.bc82cf7434001fd1aaa207b267a43ad7.svg",
     "static/media/jest.svg": "/static/media/jest.5fc7a909f94a7de3b120f8c9b125d315.svg",
+    "static/media/sequelize.svg": "/static/media/sequelize.c8e2a3a18d206fb0b50aa0dbb9c143ea.svg",
     "static/media/node.svg": "/static/media/node.20b6ca74617c9b4d2d5552f50a096520.svg",
     "static/media/redux.svg": "/static/media/redux.609190d142776d97540d56376fce6a2c.svg",
     "static/media/docker.svg": "/static/media/docker.9c970dc62c7ff79a49a554de160f34c4.svg",
@@ -21,11 +23,11 @@
     "static/media/js.svg": "/static/media/js.84ac97b2d839ad0e78473327947874a9.svg",
     "static/media/gmail.svg": "/static/media/gmail.e703eb921b64d16e9c6f8ebbc7770e95.svg",
     "static/media/tailwind.svg": "/static/media/tailwind.d22b29a2028c438a02033f41d11e899b.svg",
-    "main.ae0d7ec0.css.map": "/static/css/main.ae0d7ec0.css.map",
-    "main.54aa7814.js.map": "/static/js/main.54aa7814.js.map"
+    "main.e9b0fffd.css.map": "/static/css/main.e9b0fffd.css.map",
+    "main.2d3b53b3.js.map": "/static/js/main.2d3b53b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae0d7ec0.css",
-    "static/js/main.54aa7814.js"
+    "static/css/main.e9b0fffd.css",
+    "static/js/main.2d3b53b3.js"
   ]
 }
