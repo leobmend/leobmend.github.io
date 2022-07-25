@@ -3,13 +3,15 @@ import PropTypes from 'prop-types';
 import githubSvg from '../midia/github.svg';
 import diagonalArrow from '../midia/diagonal-arrow.svg';
 
-const h1DivStyle = 'flex items-center self-start mx-4 my-2 font-bold text-2xl md:text-4xl';
+const h1DivStyle = 'flex items-center self-start mx-4 my-2 font-bold text-[1.25rem] md:text-4xl';
 const h2Style = 'self-start mx-4 my-2 font-bold text-lg md:text-2xl';
 const pStyle = 'text-lg md:text-2xl text-justify';
 
 const getDescriptions = {
   '': (
-    <p className="font-bold text-center text-3xl md:text-4xl lg:text-5xl">Choose a project!</p>
+    <p className="font-bold m-auto text-center text-3xl md:text-4xl lg:text-5xl ">
+      Choose a project!
+    </p>
   ),
   'Trybewarts Form': (
     <>
@@ -134,8 +136,9 @@ function ProjectDescription({ project }) {
 
   return (
     <article
-      className={ `ease-in-out duration-500 flex flex-col p-4 lg:p-10 rounded-lg bg-slate-100 
-        justify-around items-center min-h-[80%] w-11/12 ${articleStyle}` }
+      className={ 'ease-in-out duration-500 flex overflow-auto scrollbar flex-col p-4 h-full '
+        + 'rounded-lg bg-slate-100 items-center min-h-[80%] w-11/12 lg:p-10 '
+        + `lg:justify-around lg:overflow-hidden ${articleStyle}` }
     >
       {descriptionHtml}
     </article>

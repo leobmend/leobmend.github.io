@@ -85,7 +85,7 @@ function Projects() {
           + `z-10 ${hrStyle}` }
       />
       <div
-        className={ 'ease-in-out duration-700 h-1/2 w-screen px-4 flex justify-center '
+        className={ 'ease-in-out duration-700 h-1/2 w-screen p-4 flex justify-center '
           + `items-center ${downContainerStyle}` }
       >
         <ProjectDescription project={ projectSelected } />
